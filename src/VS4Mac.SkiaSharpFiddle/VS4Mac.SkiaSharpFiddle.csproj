@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.10.0" />
+    <PackageReference Include="SkiaSharp" Version="1.68.0" />
+    <PackageReference Include="SkiaSharp.Views" Version="1.68.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InitialSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\InitialSource.cs" />
+    <Compile Remove="Models\ColorCombination.cs" />
+    <Compile Remove="Controls\SkiaSharpFiddleWidget.cs" />
+  </ItemGroup>
+</Project>

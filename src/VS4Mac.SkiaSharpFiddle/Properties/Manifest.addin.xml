@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addin
+    id = "com.jsuarezruiz.skiasharpfiddle">
+    <Header>
+        <Name>Color Helper Addin</Name>
+        <Description>A new tool to preview SkiaSharp code.</Description>
+        <Author>Javier Suárez</Author>
+        <Copyright>Javier Suárez</Copyright>
+        <Url>https://github.com/jsuarezruiz/VSMac-SkiaSharpFiddle</Url>
+    </Header>       
+    <Extension 
+        path="/MonoDevelop/Ide/Commands">
+        <Command
+            _label="SkiaSharp Fiddler" 
+             id="VS4Mac.SkiaSharpFiddle.Commands.SkiaSharpFiddleCommand"
+             defaultHandler="VS4Mac.SkiaSharpFiddle.Commands.SkiaSharpFiddleCommand"/>
+    </Extension>
+    <Extension 
+        path = "/MonoDevelop/Ide/MainMenu/Tools">
+        <CommandItem 
+            id="VS4Mac.SkiaSharpFiddle.Commands.SkiaSharpFiddleCommand"/>
+    </Extension> 
+</Addin>
