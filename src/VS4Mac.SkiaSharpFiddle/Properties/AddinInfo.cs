@@ -4,8 +4,8 @@ using Mono.Addins;
 using Mono.Addins.Description;
 
 [assembly: Addin(
-    "VS4Mac.SkiaSharpFiddle",
-    Namespace = "VS4Mac.SkiaSharpFiddle",
+    "SkiaSharpFiddle",
+    Namespace = "MonoDevelop",
     Version = "0.1",
     Category = "IDE extensions"
 )]
