@@ -4,8 +4,8 @@
     <Header>
         <Name>Color Helper Addin</Name>
         <Description>A new tool to preview SkiaSharp code.</Description>
-        <Author>Javier Suárez</Author>
-        <Copyright>Javier Suárez</Copyright>
+        <Author>Javier Suárez Ruiz</Author>
+        <Copyright>Javier Suárez Ruiz</Copyright>
         <Url>https://github.com/jsuarezruiz/VSMac-SkiaSharpFiddle</Url>
     </Header>       
     <Extension 
