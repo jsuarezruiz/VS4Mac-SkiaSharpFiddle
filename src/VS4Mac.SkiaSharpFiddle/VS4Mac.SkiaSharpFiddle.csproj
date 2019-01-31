@@ -16,4 +16,16 @@
     <Compile Remove="Models\ColorCombination.cs" />
     <Compile Remove="Controls\SkiaSharpFiddleWidget.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <AddinFile Include="libSkiaSharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AddinFile>    
+    <AddinFile Include="libSkiaSharp.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AddinFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="libSkiaSharp.dll" />
+    <None Remove="libSkiaSharp.dylib" />
+  </ItemGroup>
 </Project>
