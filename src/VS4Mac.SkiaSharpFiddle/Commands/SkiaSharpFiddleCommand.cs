@@ -11,7 +11,8 @@ namespace VS4Mac.SkiaSharpFiddle.Commands
         {
             var skiaSharpFiddleView = new SkiaSharpFiddleView();
             var skiaSharpFiddleController = new SkiaSharpFiddleController(skiaSharpFiddleView);
-            IdeApp.Workbench.OpenDocument(skiaSharpFiddleView, true);
+
+            IdeApp.Workbench.ShowPad(skiaSharpFiddleView, "SkiaFiddle.Pad", "SkiaFiddle", "Right", null);
         }
     }
 }
