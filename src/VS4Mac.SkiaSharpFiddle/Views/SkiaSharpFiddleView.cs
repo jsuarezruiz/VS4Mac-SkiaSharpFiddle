@@ -11,9 +11,6 @@ using SkiaSharp.Views.Gtk;
 using VS4Mac.SkiaSharpFiddle.Controllers;
 using VS4Mac.SkiaSharpFiddle.Controllers.Base;
 using VS4Mac.SkiaSharpFiddle.Views.Base;
-using MonoDevelop.Components;
-using MonoDevelop.Ide;
-using MonoDevelop.Ide.Gui;
 
 namespace VS4Mac.SkiaSharpFiddle.Views
 {
