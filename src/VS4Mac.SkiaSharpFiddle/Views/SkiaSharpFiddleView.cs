@@ -19,7 +19,7 @@ namespace VS4Mac.SkiaSharpFiddle.Views
 
     }
 
-    public class SkiaSharpFiddleView : AbstractXwtViewContent, ISkiaSharpFiddleView
+    public class SkiaSharpFiddleView : PadContent, ISkiaSharpFiddleView
     {
         static readonly SKColor PaneColor = 0xFFF5F5F5;
         static readonly SKColor AlternatePaneColor = 0xFFF0F0F0;
@@ -57,23 +57,7 @@ namespace VS4Mac.SkiaSharpFiddle.Views
             AttachEvents();
         }
 
-        public override Xwt.Widget Widget => _control;
-
-        public override bool IsViewOnly
-        {
-            get
-            {
-                return true;
-            }
-        }
-
-        public override bool IsFile
-        {
-            get
-            {
-                return false;
-            }
-        }
+        public override Control Control => _control;
 
         void Init()
         {
@@ -149,8 +133,6 @@ namespace VS4Mac.SkiaSharpFiddle.Views
 
         void BuildGui()
         {
-            ContentName = "SkiaSharp Fiddle";
-
             _headerBox.PackStart(_widthLabel, false, false, 0);
             _headerBox.PackStart(_widthEntry, false, false, 0);
             _headerBox.PackStart(_heightLabel, false, false, 0);
